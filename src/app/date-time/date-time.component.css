@@ -1,0 +1,11 @@
+.card {
+  float: center;
+  text-align: center;
+  border: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

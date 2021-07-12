@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <button class="btn btn-primary btn-outline-dark" routerLink="../" >
+  Close Profile
+  </button>
+  <button class="btn btn-primary btn-outline-dark" (click)="onUpdateData()">
+  Show Profile
+  </button>
+
+  <div class="card">
+    <div class="card-header">
+    </div>
+    <img src="{{userInfo.picture}}" alt="">
+    <div class="card-body">
+      <strong>{{userInfo.firstName}} {{userInfo.lastName}}</strong>
+      <p>
+        <strong>Gender</strong> {{userInfo.gender}}
+        <strong>Date of Birth</strong> {{userInfo.dateOfBirth}}
+        <strong>Register Date</strong> {{userInfo.registerDate}}
+        <strong>Email</strong> {{userInfo.email}}
+        <strong>Phone</strong> {{userInfo.email}}
+      </p>
+    </div>
+  </div>
+</html>
